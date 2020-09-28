@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "2.7"
+    id "net.ltgt.apt" version "0.9"
+}
+
+
+allprojects{
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    project.group = 'com.cybermonkey'
+    project.version = 'DEV-SNAPSHOT'
+}
+
+subprojects{
+    apply plugin: 'java'
+    apply plugin: 'jacoco'
+    apply plugin: 'net.ltgt.apt'
+
+    group = 'com.cybermonkey'
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+}
+
