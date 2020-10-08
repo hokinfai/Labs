@@ -11,6 +11,7 @@ rootProject.name = 'labs'
 
 include ':class2lab1'
 include ':class2lab2'
+include ':class3lab1'
 include ':class4lab1'
 include ':class4lab2'
 include ':class4lab3'
