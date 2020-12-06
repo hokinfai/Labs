@@ -23,7 +23,6 @@ subprojects{
     apply plugin: 'net.ltgt.apt'
 
     group = 'com.cybermonkey'
-    sourceCompatibility = 1.8
 
     repositories {
         mavenCentral()
