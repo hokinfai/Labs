@@ -11,18 +11,30 @@ public class ShoppingCart {
     Map<Product, Integer> cart = new HashMap<>();
 
     public void addItem(Product product) {
-        cart.put(product, 1);
+        if (cart.containsKey(product)) {
+            cart.put(product, cart.get(product) + 1);
+        } else {
+            cart.put(product, 1);
+        }
     }
 
     public void removeItem(Product product) {
-        cart.put(product, 1);
+        if (cart.get(product).equals(1)) {
+            cart.remove(product);
+        } else {
+            cart.put(product, cart.get(product) - 1);
+        }
     }
 
-    public double checkout() {
-        return 0.0;
+    public double totalPrice() {
+        double total = 0;
+        for (Map.Entry<Product, Integer> entry : cart.entrySet()) {
+            total += (entry.getKey().getPrice() * entry.getValue());
+        }
+        return total;
     }
 
-    public String showCart() {
-        return null;
+    public Map<Product, Integer> getCart() {
+        return cart;
     }
 }

@@ -1,9 +1,9 @@
 package com.cybermonkey;
 
 public class Product {
-    public Integer id;
-    public String name;
-    public double price;
+    private Integer id;
+    private String name;
+    private double price;
 
     public Product(Integer id, String name, double price) {
         this.id = id;
@@ -21,6 +21,15 @@ public class Product {
 
     public double getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                "}\n";
     }
 
 }
