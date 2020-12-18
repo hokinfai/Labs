@@ -1,14 +1,14 @@
-package com.cybermonkey;
+package com.cybermonkey.domain;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static com.cybermonkey.Price.EIGHT_HUNDRED;
-import static com.cybermonkey.Price.LESS_THAN_THRITY_THREE_HUNDRED;
-import static com.cybermonkey.Price.OVER_EIGHT_HUNDRED;
-import static com.cybermonkey.Price.SIX_HUNDRED;
-import static com.cybermonkey.Price.THRITY_THREE_HUNDRED;
+import static com.cybermonkey.domain.Price.EIGHT_HUNDRED;
+import static com.cybermonkey.domain.Price.LESS_THAN_THRITY_THREE_HUNDRED;
+import static com.cybermonkey.domain.Price.OVER_EIGHT_HUNDRED;
+import static com.cybermonkey.domain.Price.SIX_HUNDRED;
+import static com.cybermonkey.domain.Price.THRITY_THREE_HUNDRED;
 
 public class MortgageLoanMapper {
     private static final List<MortgageDetail> MORTGAGE_LOAN_MAPPINGS = List.of(

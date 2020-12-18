@@ -1,4 +1,4 @@
-package com.cybermonkey;
+package com.cybermonkey.domain;
 
 public class MortgageDetail {
     private int minAge;

@@ -1,4 +1,4 @@
-package com.cybermonkey;
+package com.cybermonkey.domain;
 
 public enum Price {
     OVER_EIGHT_HUNDRED(Integer.MAX_VALUE),

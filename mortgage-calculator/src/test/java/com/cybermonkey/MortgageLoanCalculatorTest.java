@@ -1,5 +1,6 @@
 package com.cybermonkey;
 
+import com.cybermonkey.calculator.MortgageLoanCalculator;
 import org.junit.Before;
 import org.junit.Test;
 
