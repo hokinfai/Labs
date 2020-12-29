@@ -5,15 +5,14 @@ import java.math.RoundingMode;
 
 public class PriceCalculator {
 
-    public static int getNumberOfProducts(int productId, double amount) {
-        double productPrice = DrinkCategory.getProductPrice(productId);
+    private static final double COKE_RPICE = 5.19;
 
-        return Double.valueOf(amount / productPrice).intValue();
+    public static int getNumberOfProducts(double amount) {
+        return Double.valueOf(amount / COKE_RPICE).intValue();
     }
 
-    public static double getChanges(int productId, double amount) {
-        double productPrice = DrinkCategory.getProductPrice(productId);
-        double changes = amount % productPrice;
+    public static double getChanges(double amount) {
+        double changes = amount % COKE_RPICE;
         return new BigDecimal(changes).setScale(2, RoundingMode.HALF_DOWN).doubleValue();
     }
 }
