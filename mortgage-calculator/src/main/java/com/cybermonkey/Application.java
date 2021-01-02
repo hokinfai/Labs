@@ -12,13 +12,13 @@ public class Application {
         System.out.println("What is your age?");
         final var age = scanner.nextInt();
 
-        System.out.println("How much (in thousand) is the apartment you are going to buy?");
+        System.out.println("How much (in ten thousand) is the apartment you are going to buy?");
         final var price = scanner.nextInt();
 
-        System.out.println("Are you local citizen?");
+        System.out.println("Are you local citizen (true/false)?");
         final var isCitizen = scanner.nextBoolean();
 
-        System.out.println("Are you a first time buyer?");
+        System.out.println("Are you a first time buyer (true/false)?");
         final var isFirstBuyer = scanner.nextBoolean();
 
         final var loanPercentage = MortgageLoanCalculator.calculateLoanPercentage(age, isCitizen, price, isFirstBuyer) * 100.0;

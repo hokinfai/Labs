@@ -13,13 +13,13 @@ public class Employee {
 
     private void addSal() {
         if (salary < 500.00) {
-            salary = salary + 10.0;
+            salary += 10.0;
         }
     }
 
     private void addWork() {
         if (numberOfHoursPerDay > 6.0) {
-            salary = salary + 5.0;
+            salary += 5.0;
         }
     }
 
