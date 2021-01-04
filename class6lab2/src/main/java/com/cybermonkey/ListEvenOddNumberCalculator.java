@@ -2,9 +2,13 @@ package com.cybermonkey;
 
 import java.util.List;
 
-public class Calculator {
+public class ListEvenOddNumberCalculator {
 
-    public Integer calculate(List<Integer> input) {
+    public static void main(String args[]) {
+        System.out.println(calculate(List.of(1, 2, 3, 4, 5, 5, 6)));
+    }
+
+    public static Integer calculate(List<Integer> input) {
         Integer total = 0;
         for (Integer i : input) {
             if (i % 2 == 0) {

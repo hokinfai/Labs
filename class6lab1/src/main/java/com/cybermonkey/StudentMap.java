@@ -6,7 +6,7 @@ package com.cybermonkey;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StudentBook {
+public class StudentMap {
     public static void main(String args[]) {
 
         Student studentJudy = new Student(00001, "Judy", "Communication");

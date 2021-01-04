@@ -18,7 +18,7 @@ public class Student {
     }
 
     public void advanceYear() {
-        this.year = year++;
+        this.year = ++year;
     }
 
     public String getName() {
